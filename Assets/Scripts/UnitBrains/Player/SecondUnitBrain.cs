@@ -24,7 +24,7 @@ namespace UnitBrains.Player
 
             IncreaseTemperature();
             int r = GetTemperature();
-            for (int i = 0; i <= r; i++)
+            for (int i = 1; i <= r; i++)
             {
                 var projectile = CreateProjectile(forTarget);
                 AddProjectileToList(projectile, intoList);
