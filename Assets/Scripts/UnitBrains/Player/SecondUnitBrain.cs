@@ -22,14 +22,14 @@ namespace UnitBrains.Player
                 return;
             }
 
-            IncreaseTemperature();
             int r = GetTemperature();
             for (int i = 1; i <= r; i++)
             {
                 var projectile = CreateProjectile(forTarget);
                 AddProjectileToList(projectile, intoList);
             }
-               
+
+            IncreaseTemperature();
 
         }
 
